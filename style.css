@@ -1,0 +1,160 @@
+/*
+    Michael Kellems
+    CIT 312
+    Prof. Kane
+    2/10/25
+*/
+
+html{
+    padding: 0;
+    background-color: darkgray;
+}
+
+*{
+    font-family: "Orbitron", serif;
+}
+
+header{
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1;
+}
+
+header>a>img{
+    width:140px;
+    height: 100px;
+    border: 4px solid red;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+header>h1{
+    color: red;
+    margin: 0 auto;
+    font-style: italic;
+    position:fixed;
+    text-align: center;
+    width:100%;
+    height: 60px;
+    top: 30px;
+    left: 0;
+    font-size: 40px;
+    text-decoration: line-through 5px black;
+}
+
+#idealcarform{
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    border: 4px solid red;
+    border-radius: 5px;
+    position: absolute;
+    top:120px;
+    margin: 5%
+}
+
+form{
+    overflow-y: scroll;
+}
+
+input[type="submit"]{
+    background-color: red;
+    color: black;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    height: 30px;
+    width: 140px;
+    border-top-left-radius: 5px;
+}
+
+#formheader{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    color: black;
+    justify-content: center;
+}
+
+#formheader>img{
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    top:0;
+}
+
+#formheader>h3{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 35px;
+    text-decoration: line-through 4px red;
+    font-style: italic;
+}
+
+#formheader>h3~img{
+    right: 0;
+}
+
+label{
+    color: red;
+    margin-left: 10px;
+}
+
+#manufacturerselect{
+    margin-top: 60px;
+    height: 30px;
+    width: 200px;
+    background-color: red;
+    border: none;
+}
+
+#bodystyle>option,
+#manufacturerselect>option{
+    background-color: red;
+    border: none;
+}
+
+input[type="color"]{
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 4px solid red;
+    border-radius: 5px;
+    height: 20px;
+    width: 200px;
+    padding: 0;
+}
+
+input[type="text"]{
+    background-color: red;
+    border: none;
+    color: black;
+}
+
+#bodystyle{
+    height: 30px;
+    width: 200px;
+    background-color: red;
+    border: none;
+}
+
+input[type="date"]{
+    background-color: red;
+    border: none;
+}
+
+form>textarea{
+    background-color: red;
+    border: none;
+    height: 20px;
+}

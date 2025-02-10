@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--
+    Michael Kellems
+    CIT 312
+    Prof. Kane
+    2/10/25
+-->
+
+<link href = "style.css" rel = "stylesheet"></link>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE=Edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head> 
+
+    <header>
+        <a href = "index.html"><img src = "lib/ridgeracercar.jpg"></img></a>
+        <h1>Car Finders Inc.</h1>
+    </header>
+
+    <body>
+        <form id = "idealcarform" action = "" method = "get">
+            <div id = "formheader">
+                <img src="lib/car.png"></img>
+                <h3>Ideal Car</h3>
+                <img src="lib/car.png"></img>
+            </div>
+
+            <label>Choose a manufacturer : </label>
+            <select id = "manufacturerselect" name = "manufacturer">
+                <option>GMC/Chevrolet/Caddilac</option>
+                <option>Ford/Lincoln</option>
+                <option>Chrsyler/Dodge</option>
+                <option>Honda/Acura</option>
+                <option>Toyota/Lexus/Scion</option>
+                <option>BMW</option>
+                <option>Volkswagon</option>
+            </select><br></br>
+            
+            <label>Color : </label>
+            <input type = "color" name = "color"></input> <br></br>
+            
+            <label>Drive Train : </label>
+            <input type = "radio" name = "drivetrain" value = "FWD"></input><label>FWD</label>
+            <input type = "radio" name = "drivetrain" value = "RWD"></input><label>RWD</label>
+            <input type = "radio" name = "drivetrain" value = "AWD"></input><label>AWD</label>
+            <input type = "radio" name = "drivetrain" value = "4WD"></input><label>4WD</label> <br></br>
+
+            <label>License plate Number : </label>
+            <input name = "licenseplate" type = "text" maxlength = "7" placeholder="XXXXXXX"> </input> <br></br>
+
+            <label>Body Style : </label>
+            <select id = "bodystyle" name = "bodystyle">
+                <option>Coupe</option>
+                <option>Sedan</option>
+                <option>Hatchback</option>
+                <option>Van</option>
+                <option>Minivan</option>
+            </select> <br><br>
+
+            <label>Delivery/Pickup Date : </label>
+            <input type = "date" name = "orderdate"></input><br></br>
+
+            <label>Additional notes and comments : </label>
+            <textarea name = "comments" placeholder="Type here..."></textarea>
+
+            <input type = "submit" class = "submitbutton" value = "Submit"> </input>
+        </form>
+    </body>
+</html>
