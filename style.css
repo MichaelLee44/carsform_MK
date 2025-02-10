@@ -153,8 +153,12 @@ input[type="date"]{
     border: none;
 }
 
-form>textarea{
+form>fieldset>textarea{
     background-color: red;
     border: none;
     height: 20px;
+}
+
+fieldset{
+    border:none;
 }
